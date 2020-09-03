@@ -18,14 +18,14 @@ import org.springframework.web.bind.annotation.RestController;
  *
  */
 @RestController
-public class OrderDemoController {
+public class OrderItemController {
 	
 	@Autowired
 	//  private Environment environment;
 	
 	private final OrderItemRepository repository;
 
-	OrderDemoController(OrderItemRepository repository) {
+	OrderItemController(OrderItemRepository repository) {
 	    this.repository = repository;
 	  }
 
