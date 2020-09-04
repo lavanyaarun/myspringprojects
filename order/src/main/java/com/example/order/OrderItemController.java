@@ -50,12 +50,12 @@ public class OrderItemController {
 	      .orElseThrow(() -> new OrderItemNotFoundException(id));
 	  }
 	  
-	  @GetMapping("/item/{productcode}")
-	  OrderItem findByProductCode(@PathVariable String productCode) {
-
-	    return repository.findByProductCode(productCode);
-  		      
-	  }
+//	  @GetMapping("/item/{productcode}")
+//	  OrderItem findByProductCode(@PathVariable String productCode) {
+//
+//	    return repository.findByProductCode(productCode);
+//  		      
+//	  }
 	  
 	  @PutMapping("/item/{id}")
 	  OrderItem replaceOrderItem(@RequestBody OrderItem newOrderItem, @PathVariable Long id) {
